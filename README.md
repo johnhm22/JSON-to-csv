@@ -13,7 +13,7 @@ Run a simple HTTP server with the following command:
 cd path/to/your/file  
 python3 -m http.server 3000
 
-It is now possible to connect to the localhost in WSL at port 3000 from the Windows system via the browser. However, 'http://localhost:3000 will not work. We need to use the IP address which WSL assigns. This can be found by running the command 'ip route'
+It is now possible to connect to the localhost in WSL at port 3000 from the Windows system via the browser. However, http://localhost:3000 will not work. We need to use the IP address which WSL assigns. This can be found by running the command 'ip route'
 Select the IP address after link src as shown below.
 
 ![image]/home/johnm/code/src/github.com/johnm/JSON-to-csv/Images/IP_address.jpg
