@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JSON to csv</h1>
+    <button id="btn">Start download</button>
+  </body>
+  <script>
+    fetch('https://reqres.in/api/users')
+      .then((res) => res.json())
+      .then((data) => handleData(data));
+
+    const handleData = (data) => {
+      //create header for csv file
+      const headers = Object.keys(data.data[0]).toString();
+
+      //create body data of csv file
+      const bodyData = data.data.map((d) => {
+        return Object.values(d).toString();
+      });
+      //   console.log(bodyData);
+      const csv = [headers, ...bodyData].join('\n');
+      console.log(csv);
+      csvToDownload(csv);
+    };
+
+    const csvToDownload = (csvFile) => {
+      const blob = new Blob([csvFile], { type: 'application/csv' });
+      const url = URL.createObjectURL(blob);
+      console.log(url);
+
+      const button = document.getElementById('btn');
+      button.addEventListener('click', () => {
+        const a = document.createElement('a');
+        a.download = 'myDownload.csv';
+        a.href = url;
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      });
+    };
+  </script>
+</html>
