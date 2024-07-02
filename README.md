@@ -16,11 +16,8 @@ python3 -m http.server 3000
 It is now possible to connect to the localhost in WSL at port 3000 from the Windows system via the browser. However, http://localhost:3000 will not work. We need to use the IP address which WSL assigns. This can be found by running the command 'ip route'
 Select the IP address after link src as shown below.
 
-![image]/home/johnm/code/src/github.com/johnm/JSON-to-csv/Images/IP_address.jpg
-
 Thus the IP address to enter into the browser and open the html file is:  
-http://172.31.98.33:3000/
-
+http://172.24.38.169/:3000/
 
 ![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/374e2a28-192f-41c4-8665-4cbf8c133f62)
 
