@@ -25,6 +25,22 @@ http://172.24.38.169/:3000/
 ### Note  
 More recently when this repo was cloned and tried out, it was discovered that a connection using http://localhost:3000 worked successfully as did the approach using the IP address obtained from the command 'ip route'.  
 
+Alternatively the 'live server' extension for VS Code also works. Once installed, the server can be initiated by clicking on 'Go live' found in the right hand bottom corner of VS Code. 
+
+
+![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/c6ed035d-7aba-4e0c-9aef-00f51fbb968e)
+
+
+Live server provides the address http://localhost:5500/ as can be seen below:  
+
+![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/c08aa913-97b7-42fc-b431-8a4b8c8b59d7)  
+
+
+Another method to start the server is to right-click on the html file to bring up menus and select 'Open with Live Server'.  
+
+![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/3c5e9976-f459-454d-87d6-2913f3281d4b)
+
+
 
 
 ## Reference
