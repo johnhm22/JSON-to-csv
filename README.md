@@ -19,7 +19,12 @@ Select the IP address after link src as shown below.
 Thus the IP address to enter into the browser and open the html file is:  
 http://172.24.38.169/:3000/
 
-![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/374e2a28-192f-41c4-8665-4cbf8c133f62)
+![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/374e2a28-192f-41c4-8665-4cbf8c133f62)  
+
+
+### Note  
+More recently when this repo was cloned and tried out, it was discovered that a connection using http://localhost:3000 worked successfully as did the approach using the IP address obtained from the command 'ip route'.  
+
 
 
 ## Reference
