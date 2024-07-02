@@ -21,6 +21,10 @@ Select the IP address after link src as shown below.
 Thus the IP address to enter into the browser and open the html file is:  
 http://172.31.98.33:3000/
 
+
+![image](https://github.com/johnhm22/JSON-to-csv-download/assets/71333679/374e2a28-192f-41c4-8665-4cbf8c133f62)
+
+
 ## Reference
 
 Credit to [OpenJavaScript](https://www.youtube.com/watch?v=JPxzeG4N5nQ)
